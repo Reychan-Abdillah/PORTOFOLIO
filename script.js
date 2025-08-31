@@ -32,18 +32,41 @@ function showAlert() {
     console.log("learn More")
 }
 
-// submit User
-// document.getElementById("contactForm").addEventListener("submit", function(e) {
-//     e.preventDefault();
+// on scroll
 
-//     let nama  = document.getElementById("nama").value;
-//     let email = document.getElementById("email").value;
-//     let pesan = document.getElementById("message").value;
 
-//     console.log("Name:", nama);
-//     console.log("Email:", email);
-//     console.log("Message:", pesan);
 
-//     alert(`Nama: ${nama}\nEmail: ${email}\nPesan: ${message}`);
-//   });
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          const el = entry.target;
+          const type = el.dataset.anime;
 
+          if (type === "slide-left") {
+            el.classList.remove("opacity-0", "-translate-x-10");
+            el.classList.add("opacity-100", "translate-x-0");
+          }
+        }
+      });
+    },
+    { threshold: 0.2 } // animasi jalan kalau 20% elemen sudah masuk viewport
+  );
+
+  document.querySelectorAll("[data-anime]").forEach((el) => {
+    observer.observe(el);
+  });
+
+
+
+
+    const body = document.getElementById('aboutme');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 50) { // 
+        body.classList.remove("bg-white");
+        body.classList.add("bg-gray-200");
+      } else {
+        body.classList.remove('bg-gray-200');
+        body.classList.add('bg-white');
+      }
+    });

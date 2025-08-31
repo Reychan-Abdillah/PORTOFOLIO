@@ -45,3 +45,13 @@
   backdrop-filter: saturate(180%) blur(20px);
 }
 
+
+@layer utilities {
+  [data-aos="fade-down"] {
+    transform: translateY(-20px) !important;
+  }
+  [data-aos="fade-down"].aos-animate {
+    transform: translateY(0) !important;
+  }
+}
+

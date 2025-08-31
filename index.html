@@ -12,6 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Montserrat:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 
     <script
       type="module"
@@ -87,28 +88,32 @@
     </header>
     <!-- header india end -->
 
-    <section id="home" class="pt-3 h-screen">
+    <section id="home" class="pb-36 flex pt-24 lg:pt-0">
       <div class="container mx-auto flex flex-wrap">
         <div class="w-full lg:w-1/2 self-center px-6 lg:px-12">
           <h1 class="text-base font-semibold md:text-xl lg:text-xl">
-            Hi There 👋,
-            <span
+            <span data-aos="fade-right"
+     data-aos-offset="300"
+     data-aos-easing="ease-in-sine"
+     data-aos-delay="100"
+     data-aos-duration="1000">
+     Hi There 👋,
+    </span>
+            <span data-aos="fade-" data-aos-offset="300" data-aos-easing="ease-in-sine" data-aos-delay="400" data-aos-duration="1300"
               class="block font-bold text-3xl bg-gradient-to-r from-purple-700 to-blue-900 bg-clip-text text-transparent"
             >
-              my name is <span class="lg:inline">Reychan Abdillah</span>
+              My name is <span class="lg:inline">Reychan Abdillah</span>
             </span>
           </h1>
           <h2 class="mt-2 font-medium text-lg text-slate-500">
-            Programmer & Software Engineer
+            <span  data-aos="fade-down" data-aos-duration="2000" data-aos-delay="400" >Programmer</span> <span  data-aos="fade-down" data-aos-duration="2000" data-aos-delay="600">&</span> <span data-aos="fade-down" data-aos-duration="2000" data-aos-delay="800" >Software </span> <span data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1000" >Engineer</span> 
           </h2>
-          <p class="mt-5 mb-10 font-medium text-slate-600 max-w-prose">
-            Hello! I’m Reyhan, seorang programmer dan software engineer yang
-            suka membangun kode bersih dan aplikasi scalable. Saya selalu
-            belajar teknologi baru dan praktik terbaik untuk menjaga kualitas
-            dan maintainability.
+          <p  data-aos="fade-up" data-aos-duration="1000" class="mt-5 mb-10 font-medium text-slate-600 max-w-prose">
+         Hello! I'm Reyhan, a programmer and software engineer who loves building clean code and scalable applications. I'm always learning new technologies and best practices to maintain quality and maintainability.
           </p>
           <div class="flex flex-row space-x-8">
             <a
+              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
               href="https://wa.me/6283183627431"
               class="space-x-4 inline-block font-semibold border border-transparent text-white px-4 py-2.5 bg-gradient-to-r from-purple-700 to-blue-900 rounded-full hover:border-purple-700 hover:bg-none hover:text-purple-700 hover:shadow-lg transition duration-300 ease-in-out"
             >
@@ -116,6 +121,7 @@
             </a>
 
             <button
+              data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
               onclick="showAlert()"
               class="inline-block font-semibold text-purple-700 px-4 py-2.5 rounded-full border border-purple-700 hover:shadow-lg hover:bg-gradient-to-r from-purple-700 to-blue-900 hover:text-white hover: transition duration-300 ease-in-out"
             >
@@ -124,9 +130,9 @@
           </div>
         </div>
         <div
-          class="w-full lg:w-1/2 self-end relative overflow-hidden lg:-mt-6 lg:mr-0"
+          class="w-full lg:w-1/2 self-center relative overflow-hidden lg:-mt-6 lg:mr-0"
         >
-          <img
+          <img data-aos="fade-left" data-aos-duration="1300"
             src="src/profileReyhan1.png"
             alt="Foto profil Reyhan"
             class="w-full h-auto object-cover lg:w-[30rem] lg:translate-x-32"
@@ -136,21 +142,19 @@
     </section>
 
     <main>
-      <section
-        id="aboutme"
-        class="bg-gray-200 pt-20 pb-37 shadow-2xl shadow-gray-200"
+      <section id="aboutme" class="bg-white pt-20 pb-37 shadow-2xl shadow-gray-200 transition-colors duration-500 ease-in-out"
       >
         <div
           class="container mx-auto px-4 flex flex-wrap items-center order-last lg:order-first"
         >
-          <div class="w-full lg:w-1/2 mb-8 lg:mb-0">
+          <div data-aos="fade-right" data-aos-delay="100" data-aos-duration="1500" class="w-full lg:w-1/2 mb-8 lg:mb-0">
             <img
               src="src/profileReyhan1.png"
               alt="Profile"
               class="w-full h-auto object-cover lg:w-xl"
             />
           </div>
-          <div
+          <div data-aos="fade-left" data-aos-delay="400" data-aos-duration="1000"
             class="w-full lg:w-1/2 text-center lg:text-left order-first lg:order-last"
           >
             <h1
@@ -159,10 +163,19 @@
               ABOUT ME
             </h1>
             <h2 class="font-semibold lg:text-center text-base mt-2 mb-4">
-             Passionate about building meaningful digital experiences
+              Passionate about building meaningful digital experiences
             </h2>
-            <p class="text-gray-500 max-w-prose text-justify mx-auto lg:mx-0 lg:text-lg">
-             I am a full-stack web developer with a passion for building responsive, visually appealing, and high-performing websites. My goal is to deliver digital experiences that are not only beautiful but also seamless and user-friendly. Beyond coding, I enjoy exploring new technologies, learning continuously, and collaborating with others to bring ideas to life. With every project, I bring creativity, attention to detail, and strong problem-solving skills to ensure meaningful and impactful results.
+            <p
+              class="text-gray-500 max-w-prose text-justify mx-auto lg:mx-0 lg:text-lg"
+            >
+              I am a full-stack web developer with a passion for building
+              responsive, visually appealing, and high-performing websites. My
+              goal is to deliver digital experiences that are not only beautiful
+              but also seamless and user-friendly. Beyond coding, I enjoy
+              exploring new technologies, learning continuously, and
+              collaborating with others to bring ideas to life. With every
+              project, I bring creativity, attention to detail, and strong
+              problem-solving skills to ensure meaningful and impactful results.
             </p>
 
             <div
@@ -230,13 +243,14 @@
             </div>
           </div>
         </div>
+      </div>
       </section>
     </main>
     <div class="pt-40"></div>
 
     <section id="project" class="pt-24 lg:pb-72">
       <div class="container mx-auto px-4">
-        <div class="w-full mb-13 text-center">
+        <div data-aos="fade-down" data-aos-duration="1000" class="w-full mb-13 text-center">
           <h1
             class="pb font-bold text-4xl bg-gradient-to-r from-purple-700 to-blue-900 bg-clip-text text-transparent"
           >
@@ -253,7 +267,7 @@
         <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
           <!-- project saya -->
 
-          <div
+          <div data-aos="fade-up" data-aos-duration="1000"
             class="relative rounded-md overflow-hidden bg-gray-200 p-1 shadow-gray-800"
           >
             <a href="#project">
@@ -268,6 +282,7 @@
               quae nam, placeat suscipit illo necessitatibus blanditiis esse,
               culpa illum, cupiditate
             </p>
+            
             <div class="flex flex-wrap gap-1 pr-6 pb-4">
               <span
                 class="rounded-full bg-gradient-to-r from-orange-600 to-orange-400 text-white font-semibold text-center px-2 py-1 text-xs"
@@ -310,7 +325,7 @@
             </div>
           </div>
 
-          <div
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200"
             class="relative rounded-md overflow-hidden bg-gray-200 p-1 shadow-gray-800"
           >
             <a href="#project">
@@ -367,7 +382,7 @@
             </div>
           </div>
 
-          <div
+          <div  data-aos="fade-up" data-aos-duration="1000" data-aos-delay="400"
             class="relative rounded-md overflow-hidden bg-gray-200 p-1 shadow-gray-800"
           >
             <a href="#project">
@@ -424,7 +439,7 @@
             </div>
           </div>
 
-          <div
+          <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="600"
             class="relative rounded-md overflow-hidden bg-gray-200 p-1 shadow-gray-800"
           >
             <a href="#project">
@@ -439,6 +454,7 @@
               quae nam, placeat suscipit illo necessitatibus blanditiis esse,
               culpa illum, cupiditate
             </p>
+            <div>
             <div class="flex flex-wrap gap-1 pr-6 pb-4">
               <span
                 class="rounded-full bg-gradient-to-r from-orange-600 to-orange-400 text-white font-semibold text-center px-2 py-1 text-xs"
@@ -482,16 +498,17 @@
           </div>
         </div>
       </div>
+      </div>
     </section>
 
     <section id="skills" class="pb-28 pt-20 bg-gray-100">
       <div class="pb-10 text-center">
-        <h1
-          class="font-bold text-3xl lg:whitespace-nowrap bg-gradient-to-r from-purple-700 to-blue-900 bg-clip-text text-transparent"
+        <h1 data-aos="zoom-in" data-aos-duration="1000" data-aos-="2px"
+          class="font-bold text-3xl whitespace-nowrap bg-gradient-to-r from-purple-700 to-blue-900 bg-clip-text text-transparent"
         >
           MY SKILLS
         </h1>
-        <p
+        <p data-aos="fade-up" data-aos-duration="800" data-aos-easing="ease-out-cubic"
           class="text-center mx-auto py-3 font-medium text-slate-500 max-w-prose"
         >
           In every project, I emphasize problem solving, team collaboration, and
@@ -507,7 +524,7 @@
             class="grid grid-cols-3 lg:grid-cols-3 gap-x-6 gap-y-6 place-items-center"
           >
             <!-- Skill card -->
-            <div
+            <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="100"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-orange-500/30 transition-shadow duration-300"
             >
               <div
@@ -526,12 +543,12 @@
                 class="absolute inset-x-0 bottom-3 mx-auto w-[70%] bg-gray-300 rounded-full h-1 overflow-hidden"
               >
                 <div
-                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[50%]"
+                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[100%]"
                 ></div>
               </div>
             </div>
 
-            <div
+            <div data-aos="fade-right" data-aos-duration="900" data-aos-delay="200"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-blue-500/30 transition-shadow duration-300"
             >
               <div
@@ -550,12 +567,12 @@
                 class="absolute inset-x-0 bottom-3 mx-auto w-[70%] bg-gray-300 rounded-full h-1 overflow-hidden"
               >
                 <div
-                  class="bg-gradient-to-r from-purple-600 via-indigo-400 to-blue-400 h-full rounded-full w-[50%]"
+                  class="bg-gradient-to-r from-purple-600 via-indigo-400 to-blue-400 h-full rounded-full w-[100%]"
                 ></div>
               </div>
             </div>
 
-            <div
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-yellow-500/30 transition-shadow duration-300"
             >
               <div
@@ -579,7 +596,7 @@
               </div>
             </div>
 
-            <div
+            <div  data-aos="fade-right" data-aos-duration="800" data-aos-delay="100"
               class="relative rounded-md bg-gray-200 max-h-35 py-7 lg:py-5 px-7 shadow-xl w-full flex flex-col items-center overflow-hidden hover:shadow-lg hover:shadow-blue-500/30 transition-shadow duration-300"
             >
               <div
@@ -598,12 +615,12 @@
                 class="absolute inset-x-0 bottom-3 mx-auto w-[70%] bg-gray-300 rounded-full h-1 overflow-hidden"
               >
                 <div
-                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[50%]"
+                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[100%]"
                 ></div>
               </div>
             </div>
 
-            <div
+            <div  data-aos="fade-right" data-aos-duration="900" data-aos-delay="200"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-green-500/30 transition-shadow duration-300"
             >
               <div
@@ -622,12 +639,12 @@
                 class="absolute inset-x-0 bottom-3 mx-auto w-[70%] bg-gray-300 rounded-full h-1 overflow-hidden"
               >
                 <div
-                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[50%]"
+                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[70%]"
                 ></div>
               </div>
             </div>
 
-            <div
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-blue-500/30 transition-shadow duration-300"
             >
               <div
@@ -651,7 +668,7 @@
               </div>
             </div>
 
-            <div
+            <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="100"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-sky-500/30 transition-shadow duration-300"
             >
               <div
@@ -670,12 +687,12 @@
                 class="absolute inset-x-0 bottom-3 mx-auto w-[70%] bg-gray-300 rounded-full h-1 overflow-hidden"
               >
                 <div
-                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[50%]"
+                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[70%]"
                 ></div>
               </div>
             </div>
 
-            <div
+            <div data-aos="fade-right" data-aos-duration="900" data-aos-delay="200"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-red-500/30 transition-shadow duration-300"
             >
               <div
@@ -694,12 +711,12 @@
                 class="absolute inset-x-0 bottom-3 mx-auto w-[70%] bg-gray-300 rounded-full h-1 overflow-hidden"
               >
                 <div
-                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[50%]"
+                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[70%]"
                 ></div>
               </div>
             </div>
 
-            <div
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-purple-500/30 transition-shadow duration-300"
             >
               <div
@@ -723,7 +740,7 @@
               </div>
             </div>
 
-            <div
+            <div data-aos="fade-right" data-aos-duration="700" data-aos-delay="100"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-yellow-500/30 transition-shadow duration-300"
             >
               <div
@@ -747,7 +764,7 @@
               </div>
             </div>
 
-            <div
+            <div data-aos="fade-right" data-aos-duration="800" data-aos-delay="200"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-blue-500/30 transition-shadow duration-300"
             >
               <div
@@ -766,12 +783,12 @@
                 class="absolute inset-x-0 bottom-3 mx-auto w-[70%] bg-gray-300 rounded-full h-1 overflow-hidden"
               >
                 <div
-                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[50%]"
+                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[100%]"
                 ></div>
               </div>
             </div>
 
-            <div
+            <div data-aos="fade-right" data-aos-duration="1000" data-aos-delay="300"
               class="relative rounded-md bg-gray-200 py-4 px-7 shadow-xl w-full flex flex-col items-center hover:shadow-lg hover:shadow-green-500/30 transition-shadow duration-300"
             >
               <div
@@ -790,14 +807,14 @@
                 class="absolute inset-x-0 bottom-3 mx-auto w-[70%] bg-gray-300 rounded-full h-1 overflow-hidden"
               >
                 <div
-                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[50%]"
+                  class="bg-gradient-to-r from-purple-600 via-indigo-500 to-blue-400 h-full rounded-full w-[100%]"
                 ></div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="container mx-auto lg:mt-17 w-full lg:w-1/2 lg:order-last">
+        <div data-aos="fade-left" data-aos-duration="1000" data-aos-delay="1000" class="container mx-auto lg:mt-17 w-full lg:w-1/2 lg:order-last">
           <div class="flex flex-col gap-8 pr-[90px]">
             <!-- Skill 1 -->
             <div class="ml-11 mx-auto flex flex-col w-full">
@@ -805,7 +822,7 @@
               <div
                 class="relative w-full h-1 bg-gray-200 rounded-full flex items-end"
               >
-                <div
+                <div 
                   class="bg-purple-600 w-full h-1 rounded-full transition-all duration-500 ease-in-out"
                   style="width: 60%"
                 ></div>
@@ -946,7 +963,14 @@
             <p
               class="text-justify mx-auto pb-3 pt-4 font-medium text-slate-500 max-w-prose mt-4 px-4 lg:px-18"
             >
-            Thank you for visiting my portfolio! If you’ve made it this far, it means you might be curious to know more about me or my work — and I’d love to hear from you. Whether you’re looking for someone to collaborate with, need help bringing an idea to life, or simply want to share feedback, don’t hesitate to reach out. I believe that great conversations often lead to meaningful opportunities, and I’m always open to connecting with new people. Let’s build something amazing together!
+              Thank you for visiting my portfolio! If you’ve made it this far,
+              it means you might be curious to know more about me or my work —
+              and I’d love to hear from you. Whether you’re looking for someone
+              to collaborate with, need help bringing an idea to life, or simply
+              want to share feedback, don’t hesitate to reach out. I believe
+              that great conversations often lead to meaningful opportunities,
+              and I’m always open to connecting with new people. Let’s build
+              something amazing together!
             </p>
           </div>
           <div class="flex pt-5 space-x-6 items-center lg:px-28 px-4 mx-auto">
@@ -1020,7 +1044,7 @@
           <div class="w-full max-w-md mx-auto relative">
             <!-- Form -->
             <form
-            id="contactForm"
+              id="contactForm"
               action="https://formspree.io/f/mldwjpew"
               method="post"
               class="bg-white/30 backdrop-blur-md shadow-lg shadow-purple-600 rounded-lg px-8 py-6 relative z-10"
@@ -1094,7 +1118,10 @@
         Copyright © 2025 Reychan Abdillah
       </div>
     </section>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
   </body>
 </html>
