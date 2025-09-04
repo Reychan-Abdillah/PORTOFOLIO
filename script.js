@@ -167,3 +167,33 @@ window.addEventListener("scroll",() => {
 //     }
 //   })
 // })
+
+
+ const sections = document.querySelectorAll("section");
+  const navLink = document.querySelectorAll(".nav-link");
+
+  const options = {
+    root: null,
+    threshold: 0.6, // 60% terlihat
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        navLink.forEach((link) => {
+          link.classList.remove("bg-purple-100", "text-purple-700");
+        });
+
+        const activeLink = document.querySelector(
+          `.nav-link[href="#${entry.target.id}"]`
+        );
+        if (activeLink) {
+          activeLink.classList.add("bg-purple-100", "text-purple-700");
+        }
+      }
+    });
+  }, options);
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
